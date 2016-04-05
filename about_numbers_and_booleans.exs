@@ -7,16 +7,16 @@ defmodule About_Numbers_and_booleans do
     use Koans
 
     think "Basics numbers types" do
-        an_integer = __?
+        an_integer = 42
         a_float = 42.0
 
         assert is_integer(an_integer)
 
-        assert_? is_float(a_float)
+        assert is_float(a_float)
 
-        assert_? is_float(an_integer)
+        refute is_float(an_integer)
 
-        assert_? is_integer(a_float)
+        refute is_integer(a_float)
     end
 
     think "Is a hexadecimal number treated as an integer" do
